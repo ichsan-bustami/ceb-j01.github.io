@@ -63,7 +63,7 @@ main img {
     width: 70%;
     margin-top: 20px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 }
 
 .card-container {
