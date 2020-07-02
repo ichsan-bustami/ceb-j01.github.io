@@ -9,38 +9,92 @@ body {
     font-family: 'Zilla Slab', serif;
 }
 
-main img {
+.header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: rgba(10, 10, 10, 0.6);
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    z-index: 10;
+}
+
+.header-logo {
+    float: left;
+    font-family: serif;
+    font-size:33px;
+    color:#31f7c5;
+    padding-left: 10px;
+}
+
+.header span{
+    font-family: serif;
+    font-size:25px;
+    padding-top: 10px;
+    padding-left: px;
+    color: #fafcfb;
+}
+
+.header-list li{
+    list-style: none;
+    color: #fff;
+    float: left;
+    padding: 0px 15px;
+    border-right: 1px solid white;
+}
+
+.header-list li:last-child {
+    border-right: none;
+}
+
+.header-list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.wrapper {
     width: 100%;
 }
 
-.container {
-    position: relative;
+.top-img {
+    top: 90px;
+    width: 100%;
+
+}
+
+.top-wrapper {
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.top-wrapper .content {
     bottom: 30px;
     margin: 0 auto;
-    padding: 15px 0;
     width: 70%;
     text-align: center;
 }
 
-.container h1 {
+.top-wrapper .content h1 {
+    margin-top: 0;
     text-align: left;
     color: black;
-
+    
 }
 
-.container h1 span {
+.top-wrapper .content h1 span {
     color: red;
-  
+    
 }
 
-.container p {
+.top-wrapper .content p {
     text-align: left;
     font-size: 17px;
     line-height: 20px;
     opacity: 0.9;
 }
 
-.container a {
+.top-wrapper .content a {
     display: inline-block;
     background-color: blue;
     color: white;
@@ -50,32 +104,28 @@ main img {
     border-radius: 5px;
     box-shadow: 0 7px darkblue;
     margin-top: 20px;
-    /* margin-bottom: 85px; */
+    margin-bottom: 40px;
 }
 
-.container a:active {
+.top-wrapper .content a:active {
     position: relative;
     box-shadow: none;
     top: 7px;
 }
 
-.middle-content {
-    width: 70%;
-    margin-top: 20px;
+.bottom-wrapper { 
+    width: 80%;
     text-align: center;
-    margin: 0 auto 50px auto;
-}
-
-.card-container {
-    box-sizing: border-box;
-    display: flex;
+    margin: 20px auto 50px auto;
 }
 
 .card {
-    flex: auto;
+    float: left;
+    width: 23%;
     border: 2px solid darkblue;
     padding: 5px 10px;
     margin: 10px 7px;
+    border-radius: 5px;
 }
 
 .card a {
@@ -94,4 +144,116 @@ main img {
     position: relative;
     top: 4px;
     box-shadow: none;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 30px;
+    padding: auto;
+    opacity: 0;
+}
+
+.mid-wrapper {
+    width: 100%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+}
+
+.mid-wrapper .container {
+    margin: 0 auto;
+}
+
+.mid-wrapper h3 {
+    font-size: 25px;
+}
+
+.left{
+    width: 24%;
+    background: #dedede ;
+    padding: 10px;
+    margin-left: 12px;
+    float: left;
+    border-radius: 5px;
+}
+
+.left li {
+    margin-top: 5px;
+}
+
+.middle{
+    width: 48%;
+    border: 1px solid #dedede;
+    padding: 0 10px;
+    margin: 0 10px;
+    float: left;
+    border-radius: 5px;
+}
+
+.middle img{
+    max-width: 100%;
+    height: auto;
+}
+
+.right{
+    width: 25%;
+    background: lightskyblue;
+    padding: 5px 15px;
+    float: left;
+    border-radius: 5px;
+}
+
+.right-article1 {
+    border-bottom: 1px solid lightslategray;
+}
+
+.right-article1 h3 {
+    text-align: center;
+}
+
+.right-article1 ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.right-article1 li {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.right-article1 li > a {
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.right-article1 li > a:hover {
+    background-color: black;
+    border: none;
+    color: white;
+    opacity: 0.8;
+}
+
+.clear {
+    clear: left;
+}
+
+.footer{
+    clear: both;
+    width: 100%;
+    color: #fff;
+    background-color: #09b5a4;
+    padding: 10px 20px;
+}
+.footer a{
+    color: #fff;
+}
+.footer a:hover{
+    color: #eaeaea;
 }
