@@ -15,7 +15,8 @@
     }
 
     .bottom-wrapper {
-        width: 90%;
+        width: 98%;
+        padding-left: 10px;
     }
 
     .card {
@@ -28,8 +29,13 @@
         width: 90%;
     }
 
+    h1 {
+        font-size: 25px;
+    }
+
     .bottom-wrapper{
         width: 100%;
+        padding: 0;
     }
 
     .card {
@@ -50,32 +56,33 @@
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media (max-width: 1080px) {
     
     .container {
         width: 100%;
     }
     .left {
-        width: 26%;
+        width: auto;
+        float: none;
         background-color: #89d0ff;
-        margin: 10px;
+        margin: 14px;
     }
     .middle {
-        width: 68%;
-        float: right;
-        margin: 10px;
+        width: auto;
+        float: none;
+        margin: 14px;
     }
     
     .right {
         clear: both;
         padding: 1% 4%;
         width: auto;
-        margin: 10px;
+        margin: 14px;
         float: none;
     }
 }
 
-@media screen and (max-width: 780px) {
+@media (max-width: 780px) {
     
     .header, 
     .footer{
@@ -96,4 +103,43 @@
         float: none;
     }
     
+}
+
+@media (max-width: 400px) {
+    .header-logo {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .header-logo > span {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .left > h3 {
+        font-size: 18px;
+    }
+
+    .middle > h3 {
+        font-size: 18px;
+    }
+
+    .right-article1 h3 {
+        font-size: 18px;
+    }
+
+    .right-article2 h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
 }
